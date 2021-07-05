@@ -38,6 +38,8 @@ var editor = new SimpleMDE({
 function generateMarkdown(data) {
     const dataObj = JSON.parse(data)
 
+    if (!dataObj.openapi) return "# Please check you file!";
+
     body = `# ${dataObj.info.title} \n`
     body += `${dataObj.info.description} \n\n`
 
