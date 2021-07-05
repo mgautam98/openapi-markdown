@@ -31,7 +31,7 @@ var editor = new SimpleMDE({
     indentWithTabs: false,
     sideBySideFullscreen: false,
     element: document.getElementById('markdown-output'),
-    initialValue: '## Supported \n You\'ll get output here \n\n Supported format is JSON'
+    initialValue: '## OpenAPI to Markdown Converter \n You\'ll get output here \n Supported format is JSON'
 });
 
 
