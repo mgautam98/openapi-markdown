@@ -1,0 +1,11 @@
+{
+  "name": "openapi-to-markdown",
+  "version": "1.0.0",
+  "description": "Generate markdown API references from openapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAPI to Markdown</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="static/js/simplemde.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="h-screen flex flex-col my-20 items-center space-y-7">
+        <div class="div flex space-x-5 items-center mb-5">
+            <img class="h-20 w-24" src="Openapi.png" alt="OpenAPI logo">
+            <h1 class="text-5xl">OpenAPI to Markdown</h1>
+            <img class="h-20 w-30" src="markdown.png" alt="markdown logo">
+        </div>
+        <div class="flex justify-center items-center space-x-5 pb-7">
+            <input id="hidden-input" class="hidden" type="file" name="openapi" id="openapi">
+            <button id="upload-button"
+                class="px-3 py-2 rounded shadow-lg text-white text-2xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-indigo-600 hover:to-blue-500">Upload
+                File</button>
+            <span id="upload-label">No file selected</span>
+        </div>
+        <div class="w-3/5">
+            <textarea class="hidden" id="markdown-output"></textarea>
+        </div>
+    </div>
+</body>
+
+<script src="static/js/main.js"></script>
+
+</html>
