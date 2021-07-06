@@ -96,8 +96,7 @@ function generateMarkdown(data) {
                 let type = 'N/A'
                 if (responseContent[responseCode]['content']) {
                     reference = responseContent[responseCode]['content']['application/json']['schema']['$ref']
-                    referenceBase = reference ? reference.split('/').slice(-1)[0] : 'N/A'
-                    type = `${referenceBase} | `
+                    type = reference ? reference.split('/').slice(-1)[0] : 'N/A'
                 }
 
                 response += `| ${responseCode} | ${type} | ${desc} | \n`
