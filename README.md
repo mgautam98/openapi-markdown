@@ -5,7 +5,7 @@
 # OpenAPI to Markdown
 
 Generate Markdown API References from openapi.json file  
-Go to [Website](https://mgautam98.github.io/)
+Go to [Website](https://mgautam98.github.io/openapi-markdown/)
 
 ## Authors
 
